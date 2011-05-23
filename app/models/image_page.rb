@@ -3,7 +3,7 @@ class ImagePage < ActiveRecord::Base
   belongs_to :image
   belongs_to :page
 
-  attr_accessible :image_id, :position
+  attr_accessible :image_id, :position, :locale
 
   translates :caption if self.respond_to?(:translates)
 
